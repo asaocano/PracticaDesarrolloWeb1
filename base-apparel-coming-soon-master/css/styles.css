@@ -1,0 +1,50 @@
+:root{
+    --Desaturated: hsl(0, 36%, 70%);
+    --Soft: hsl(0, 93%, 68%);
+}
+body{
+    background-image: url(../images/bg-pattern-desktop.svg);
+    font-family: 'Jost', sans-serif;
+
+}
+html {
+    box-sizing: border-box;
+    min-height: 100%; /*Se coloca para que el degradado tome la pantalla completa y no por franjas*/
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+
+  .logo{
+    margin-left: 20px;
+  }
+  @media (min-width: 768px) {
+    .logo{
+      margin-left: 50px;
+      margin-top: 30px;
+    }
+  }
+.contenedor{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+@media (min-width: 780px) {
+    .contenedor{
+      flex-direction: row;
+    }
+  }
+.imagen {
+    width: 480px - 1rem;
+  }
+.imagen img{
+    width: 100%;
+  }
+
+.uno p{
+  font-weight: 700;
+  font-size: 50px;
+}
