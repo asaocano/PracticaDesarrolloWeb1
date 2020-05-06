@@ -39,11 +39,11 @@ html {
       flex-direction: row;
     }
     .informacion{
-      flex: calc(70% - 1rem);
-      margin-left: 70px;
+      flex: calc(60% - 1rem);
+      margin-left: 100px;
     }
     .imagen{
-      flex: calc(30% - 1rem);
+      flex: calc(40% - 1rem);
     }
   }
 
@@ -61,6 +61,19 @@ html {
   color: var(--Desaturated);
   font-weight: 300;
   margin-bottom: 50px;
+}
+@media (min-width: 768px) {
+  .informacion{
+    text-align: left;
+  }
+  .parrafo{
+    width: 70%;
+  }
+  .parrafo p{
+    padding: 0 0!important;
+  }
+  
+  
 }
 .informacion .uno span{
   color: black;
@@ -83,6 +96,14 @@ html {
   top: -2.3px;
   right: 0;
 }
+@media (min-width: 768px) {
+  .contenedor-correo{
+    width: 70%;
+  }
+  .contenedor-boton{
+    right: 25px;
+  }
+}
 .contenedor-correo .correo{
   width: 90%;
   background-color: transparent;
@@ -93,7 +114,7 @@ html {
   font-size: 20px;
 }
 .contenedor-boton .button{
-  padding: 20px 40px;
+  padding: 20px 50px;
   background-color: #f09a99;
   background-image: url(../images/icon-arrow.svg);
   background-repeat: no-repeat;
@@ -106,8 +127,35 @@ html {
 .contenedor-boton .button:hover{
   background-color: hsl(0, 93%, 68%);
   transform: scale(1.1);
+  cursor: pointer;
 }
 .attribution a{
   text-decoration: none;
   color: #000;
 }
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.error{
+  font-size: 16px;
+  text-transform: none;
+  margin: 0 0 0 35px;
+  position: relative;
+  display: none;
+  }
+.img-error{
+  position: absolute;
+  top: 0px;
+  left: 290px;
+  display: none;
+  }
+@media (min-width: 768px) {
+  .img-error{
+    top: 0px;
+    left: 200px;
+  }
+}
+
+
+

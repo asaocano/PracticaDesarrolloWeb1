@@ -11,16 +11,6 @@
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
   <link href="https://fonts.googleapis.com/css?family=Jost:300,400,700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/c6a4418b14.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/styles.css">
@@ -39,10 +29,17 @@
           with announcements and our launch deals.</p>
       </div>
       <div class="contenedor-correo">
-        <input type="email" name="correo" class="correo" placeholder="    Email Address">
+        <input type="email" name="correo" class="correo" id="correo" placeholder="    Email Address">
         <div class="contenedor-boton">
           <input type="button" value="" class="button">
         </div>
+        <div class="error">
+          <p>Please provide a valid email</p>
+          <div class="img-error">
+            <img src="images/icon-error.svg" alt="">
+          </div>
+        </div>
+
       </div>
 
 
