@@ -154,6 +154,7 @@ html {
   .img-error{
     top: 0px;
     left: 200px;
+    display: none;
   }
 }
 
